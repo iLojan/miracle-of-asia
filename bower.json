@@ -1,0 +1,25 @@
+{
+  "name": "miracleofasia",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Madushan Dasanayaka"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "font-awsome#^4.7.0"
+  },
+  "devDependencies": {
+    "jQuery": "^3.2.1"
+  }
+}

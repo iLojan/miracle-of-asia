@@ -1,0 +1,6 @@
+node_modules/
+bower_components/
+js/app.min.js
+js/lib.min.js
+css/lib.min.css
+css/style.min.css

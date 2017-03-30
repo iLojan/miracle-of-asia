@@ -1,0 +1,24 @@
+
+.navbar{
+	margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: $menu-bg-color;
+    border-color: $menu-bg-color;
+}
+
+.dropdown-menu,
+.form-control,
+.btn{
+	border-radius: 0;
+}
+
+.navbar{
+	border: 0;
+}
+
+.btn-primary{
+	background-color: $primary-bg-color;
+    border-color: $primary-bg-color;
+}

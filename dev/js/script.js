@@ -9,6 +9,8 @@ jQuery.noConflict();
 	*/
 	$(function() {
 
+		$('.parallax-window').parallax();
+
 	});	
 
 }(jQuery));

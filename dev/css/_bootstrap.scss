@@ -22,3 +22,10 @@
 	background-color: $primary-bg-color;
     border-color: $primary-bg-color;
 }
+
+.btn-primary.active, 
+.btn-primary:active, 
+.btn-primary:hover{
+	background-color: $primary-bg-color;
+    border-color: $primary-bg-color;
+}

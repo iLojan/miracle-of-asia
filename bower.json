@@ -18,7 +18,9 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "font-awesome": "font-awsome#^4.7.0",
-    "parallax.js": "^1.4.2"
+    "parallax.js": "^1.4.2",
+    "slick-carousel": "^1.6.0",
+    "rateYo": "rateyo#^2.2.0"
   },
   "devDependencies": {
     "jQuery": "^3.2.1"

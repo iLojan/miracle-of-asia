@@ -1,0 +1,141 @@
+
+/* ---slick slider--- */
+.slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 40px;
+    margin-top: -20px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    font: normal normal normal 14px/1 FontAwesome;
+
+    &.slick-disabled{
+    	opacity: 0.4;
+    }
+}
+
+.slick-prev{
+	left: -30px;
+}
+
+.slick-prev:before {
+    content: "\f104";
+    line-height: normal;
+    font-size: 40px;
+    color: $title-font-color;
+}
+
+.slick-next{
+	right: -35px;
+}
+
+.slick-next:before {
+    content: "\f105";
+    line-height: normal;
+    font-size: 40px;
+    color: $title-font-color;
+}
+
+.slick-slide {
+	margin: 0 8px;
+}
+
+.slick-list {
+	margin: 0 -8px;
+}
+
+@media only screen and (max-width: 1070px) and (min-width: 992px) {
+	.slick-next{
+		top: calc(100% + 10px);
+    	right: 0;
+    	width: 13px;
+    	overflow: hidden;
+	}
+
+	.slick-prev{
+		top: calc(100% + 10px);
+    	left: 0;
+    	width: 13px;
+    	overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 1268px) and (min-width: 1200px) {
+	.slick-next{
+		top: calc(100% + 10px);
+    	right: 0;
+    	width: 13px;
+    	overflow: hidden;
+	}
+
+	.slick-prev{
+		top: calc(100% + 10px);
+    	left: 0;
+    	width: 13px;
+    	overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.slick-next{
+		top: calc(100% + 10px);
+    	right: 0;
+    	width: 13px;
+    	overflow: hidden;
+	}
+
+	.slick-prev{
+		top: calc(100% + 10px);
+    	left: 0;
+    	width: 13px;
+    	overflow: hidden;
+	}
+}
+
+
+/* --rateyo--- */
+.jq-ry-container {
+  position: relative;
+  padding: 0 5px;
+  line-height: 0;
+  display: block;
+  cursor: pointer;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.jq-ry-container[readonly="readonly"] {
+  cursor: default;
+}
+.jq-ry-container > .jq-ry-group-wrapper {
+  position: relative;
+  width: 100%;
+}
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group {
+  position: relative;
+  line-height: 0;
+  z-index: 10;
+  white-space: nowrap;
+}
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group > svg {
+  display: inline-block;
+}
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group.jq-ry-normal-group {
+  width: 100%;
+}
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group.jq-ry-rated-group {
+  width: 0;
+  z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}

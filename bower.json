@@ -20,7 +20,9 @@
     "font-awesome": "font-awsome#^4.7.0",
     "parallax.js": "^1.4.2",
     "slick-carousel": "^1.6.0",
-    "rateYo": "rateyo#^2.2.0"
+    "rateYo": "rateyo#^2.2.0",
+    "seiyria-bootstrap-slider": "^9.7.2",
+    "iCheck": "^1.0.2"
   },
   "devDependencies": {
     "jQuery": "^3.2.1"

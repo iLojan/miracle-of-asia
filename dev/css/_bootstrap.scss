@@ -29,3 +29,8 @@
 	background-color: $primary-bg-color;
     border-color: $primary-bg-color;
 }
+
+.checkbox label, 
+.radio label {
+    padding-left: 5px;
+}

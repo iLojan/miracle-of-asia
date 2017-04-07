@@ -19,6 +19,10 @@ a:focus{
 @import 'header';
 @import 'footer';
 
+.no-padding{
+	padding: 0;
+}
+
 .main-image{
 	min-height: $main-image-height;
 	background: transparent;
@@ -40,6 +44,19 @@ a:focus{
 
 .search-wrap{
 	background-color: $primary-bg-color;
+
+	h3{
+		color: #fff;
+	    margin: 0;
+	    padding: 22px 0;
+	    font-size: 22px;
+	    font-weight: normal;
+
+	    i{
+	    	color: $primary-bg-color2;
+	    	float: right;
+	    }
+	}
 
 	&.form{
 		background-color: $primary-bg-color2;
@@ -237,7 +254,8 @@ a.thumb-link:hover{
 	}
 }
 
-.rating{
+.rating,
+.rating-lg{
 	display: inline-block;
 }
 
@@ -345,5 +363,100 @@ a.thumb-link:hover{
 
 	.no-padding-sm-right{
 		padding-right: 0;
+	}
+}
+
+
+.search-page{
+	margin-top: 30px;
+
+	.order-by {
+	    padding: 10px 0;
+	    border-bottom: 1px solid #d4d4d4;
+	}
+
+	.search-item{
+		margin-top: 20px;
+	    display: table;
+	    width: 100%;
+	    border-bottom: 1px solid #d4d4d4;
+	    padding-bottom: 20px;
+
+		.image{
+			display: table-cell;
+			vertical-align: top;
+			width: 200px;
+			img{
+				width: 200px;
+				height: 150px;
+				object-fit: cover;
+				overflow: hidden;
+			}
+		}
+
+		.center-content {
+			display: table-cell;
+			vertical-align: top;
+			padding: 0 10px;
+
+			h3{
+				margin: 0;
+			    padding: 0 0 10px 0;
+			    font-weight: bold;
+			    font-size: 20px;
+			}
+
+			.rating-container{
+				span{
+					display: inline-block;
+	    			vertical-align: super;
+				}
+			}
+		}
+
+		.right-content {
+			width: 150px;
+			display: table-cell;
+			vertical-align: bottom;
+
+			span{
+				font-size: 20px;
+			    font-weight: 700;
+			    color: $title-font-color;
+			    display: block;
+			    text-align: right;
+			}
+		}
+	}
+
+	.filter-wrap{
+		h4{
+			font-family: $font-primary;
+		}
+
+		.filter-container{
+			margin-bottom: 30px;
+
+			h5{
+				font-family: $font-primary;
+				margin: 0;
+			    padding: 10px;
+			    background-color: $primary-bg-color2;
+			    color: #ffffff;
+			}
+
+			.filter-options {
+				&.slider{
+					margin-top: 32px;
+				}
+
+			    padding: 5px;
+			}
+
+			.slider{
+				width: 100%;
+			}
+		}
+
 	}
 }

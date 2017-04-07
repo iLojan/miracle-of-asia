@@ -34,20 +34,49 @@ jQuery.noConflict();
 			    }
 			  ]
 			});
+
+			$("#ex2").slider({
+				tooltip: 'always'
+			});
+
+			$("#ex3").slider({
+				tooltip: 'always'
+			});
+
+			$('.rating').each(function(){
+				var val = $(this).data('value');
+				if(val && val>=0 && val<=5){
+					$(this).rateYo({
+						rating: val,
+						starWidth: '12px',
+						ratedFill: '#518c3c',
+						normalFill: "#dddddd",
+						readOnly: true
+					});
+				}
+			});
+
+			$('.rating-lg').each(function(){
+				var val = $(this).data('value');
+				if(val && val>=0 && val<=5){
+					$(this).rateYo({
+						rating: val,
+						starWidth: '24px',
+						ratedFill: '#518c3c',
+						normalFill: "#dddddd",
+						readOnly: true
+					});
+				}
+			});
+
+			$('input').iCheck({
+				checkboxClass: 'icheckbox_square-green',
+				radioClass: 'iradio_square-green',
+				increaseArea: '20%' // optional
+			});
+
 		});
 
-		$('.rating').each(function(){
-			var val = $(this).data('value');
-
-			if(val && val>=0 && val<=5){
-				$(this).rateYo({
-					rating: val,
-					starWidth: '12px',
-					ratedFill: '#518c3c',
-					normalFill: "#dddddd",
-					readOnly: true
-				});
-			}
-		});
+		
 
 }(jQuery));

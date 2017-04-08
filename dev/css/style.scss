@@ -380,6 +380,7 @@ a.thumb-link:hover{
 	    	&.filter-link {
 			    color: #303030;
 			    padding: 0 10px;
+			    white-space: nowrap;
 			}
 	    }
 
@@ -457,6 +458,15 @@ a.thumb-link:hover{
 	}
 
 	.filter-wrap{
+
+		.filter-toggle{
+			float: right;
+		    color: #ffffff;
+		    font-size: 26px;
+		    margin-top: -4px;
+		    cursor: pointer;
+		}
+
 		h4{
 			font-family: $font-primary;
 			margin: 0;
@@ -504,4 +514,45 @@ a.thumb-link:hover{
 	.pagination{
 		border-radius: 0;
 	}
+}
+
+@media only screen and (max-width: 520px) {
+
+	.search-page .search-item .image {
+	    display: block;
+	    width: 100%;
+	}
+
+	.search-page .search-item .image img{
+		width: 100%;
+		height: auto;
+	}
+
+	.search-page .search-item .center-content{
+		display: block;
+		padding: 10px 0 0 0;
+	}
+
+}
+
+@media only screen and (max-width: 991px) {
+
+	.search-page .search-item{
+		display: block;
+	}
+
+	.search-page .search-item .right-content {
+	    display: block;
+	    margin-left: auto;
+    	margin-right: 0;
+	}
+
+	.search-page .filter-wrap h4 {
+	    margin-bottom: 10px;
+	}
+
+	.search-page .filter-wrap .filter-container {
+	    margin-bottom: 10px;
+	}
+
 }

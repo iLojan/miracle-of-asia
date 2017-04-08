@@ -373,6 +373,19 @@ a.thumb-link:hover{
 	.order-by {
 	    padding: 10px 0;
 	    border-bottom: 1px solid #d4d4d4;
+
+	    a{
+	    	color: $primary-bg-color;
+
+	    	&.filter-link {
+			    color: #303030;
+			    padding: 0 10px;
+			}
+	    }
+
+	    label{
+	    	font-weight: normal;
+	    }
 	}
 
 	.search-item{
@@ -404,6 +417,10 @@ a.thumb-link:hover{
 			    padding: 0 0 10px 0;
 			    font-weight: bold;
 			    font-size: 20px;
+
+			    a{
+			    	color: $title-font-color;
+			    }
 			}
 
 			.rating-container{
@@ -420,11 +437,21 @@ a.thumb-link:hover{
 			vertical-align: bottom;
 
 			span{
-				font-size: 20px;
+				font-size: 26px;
 			    font-weight: 700;
 			    color: $title-font-color;
 			    display: block;
 			    text-align: right;
+
+			    span{
+			    	font-size: 14px;
+				    display: inline-block;
+				    margin-right: 5px;
+			    }
+			}
+
+			.btn{
+				font-size: 18px;
 			}
 		}
 	}
@@ -432,6 +459,10 @@ a.thumb-link:hover{
 	.filter-wrap{
 		h4{
 			font-family: $font-primary;
+			margin: 0;
+			padding: 15px 10px 12px 10px;
+			background-color: #279a55;
+			color: #fff;
 		}
 
 		.filter-container{
@@ -446,11 +477,17 @@ a.thumb-link:hover{
 			}
 
 			.filter-options {
-				&.slider{
-					margin-top: 32px;
+			    padding: 15px;
+		        background-color: #f7f7f7;
+
+		        &.slider{
+					padding-top: 32px;
+				    padding-bottom: 25px;
 				}
 
-			    padding: 5px;
+				.max {
+				    float: right;
+				}
 			}
 
 			.slider{
@@ -458,5 +495,13 @@ a.thumb-link:hover{
 			}
 		}
 
+	}
+}
+
+.pagination-container{
+	text-align: center;
+
+	.pagination{
+		border-radius: 0;
 	}
 }

@@ -132,21 +132,25 @@
       <section class="container search-page">
         <div class="row">
           <aside class="col-xs-12 col-sm-3 filter-wrap">
-            <h4>Filter by</h4>
+            <h4><i class="fa fa-filter" aria-hidden="true"></i> Filter by</h4>
             <div class="filter-container">
-              <h5>Price</h5>
+              <h5><i class="fa fa-usd" aria-hidden="true"></i> Price</h5>
               <div class="filter-options slider">
                 <input id="ex2" type="text" class="slider" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/>
+                <span class="min">10</span>
+                <span class="max">1000</span>
               </div>
             </div>
             <div class="filter-container">
-              <h5>Rating</h5>
+              <h5><i class="fa fa-star" aria-hidden="true"></i> Rating</h5>
               <div class="filter-options slider">
                 <input id="ex3" type="text" class="slider" value="" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="5"/>
+                <span class="min">0</span>
+                <span class="max">5</span>
               </div>
             </div>
             <div class="filter-container">
-              <h5>Hotel type</h5>
+              <h5><i class="fa fa-bed" aria-hidden="true"></i> Hotel type</h5>
               <div class="filter-options">
                 <div class="checkbox">
                   <label>
@@ -178,7 +182,17 @@
                 <option>Price</option>
                 <option>Rating</option>
               </select>
-              <a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a> <span>|</span>
+              <a href="#" class="filter-link">Recomended</a> <span>|</span>
+              <a href="#" class="filter-link">Most Viewed</a>
+              <label class="pull-right">
+                Records per page: 
+                <select name="" id="">
+                  <option>25</option>
+                  <option>50</option>
+                  <option>100</option>
+                </select>
+              </label>
             </div>
 
             <div class="search-item">
@@ -192,40 +206,8 @@
                 <p>Hilton Colombo Residences offers 177 stylish rooms and suites with views of the Indian Ocean and the metropolis of Colombo.</p>
               </div>
               <div class="right-content">
-                <span>LKR 8500</span>
-                <a href="#" class="btn btn-primary btn-block">Book Now</a>
-              </div>
-            </div>
-
-            <div class="search-item">
-              <div class="image">
-                <img src="images/hotels/hotel-1.jpg" alt="">
-              </div>
-              <div class="center-content">
-                <h3><a href="#">Colombo City Hotel</a></h3>
-                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 11, Upatissa Road Colombo- 04</p>
-                <div class="rating-container"><div class="rating-lg" data-value="3.5"></div> <span>(50 Reviews)</span></div>
-                <p>Hilton Colombo Residences offers 177 stylish rooms and suites with views of the Indian Ocean and the metropolis of Colombo.</p>
-              </div>
-              <div class="right-content">
-                <span>LKR 8500</span>
-                <a href="#" class="btn btn-primary btn-block">Book Now</a>
-              </div>
-            </div>
-
-            <div class="search-item">
-              <div class="image">
-                <img src="images/hotels/hotel-1.jpg" alt="">
-              </div>
-              <div class="center-content">
-                <h3><a href="#">Colombo City Hotel</a></h3>
-                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 11, Upatissa Road Colombo- 04</p>
-                <div class="rating-container"><div class="rating-lg" data-value="3.5"></div> <span>(50 Reviews)</span></div>
-                <p>Hilton Colombo Residences offers 177 stylish rooms and suites with views of the Indian Ocean and the metropolis of Colombo.</p>
-              </div>
-              <div class="right-content">
-                <span>LKR 8500</span>
-                <a href="#" class="btn btn-primary btn-block">Book Now</a>
+                <span><span>LKR</span>8500</span>
+                <a href="#" class="btn btn-primary btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i> Book Now</a>
               </div>
             </div>
 
@@ -240,8 +222,8 @@
                 <p>Hilton Colombo Residences offers 177 stylish rooms and suites with views of the Indian Ocean and the metropolis of Colombo.</p>
               </div>
               <div class="right-content">
-                <span>LKR 8500</span>
-                <a href="#" class="btn btn-primary btn-block">Book Now</a>
+                <span><span>LKR</span>8500</span>
+                <a href="#" class="btn btn-primary btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i> Book Now</a>
               </div>
             </div>
 
@@ -256,10 +238,62 @@
                 <p>Hilton Colombo Residences offers 177 stylish rooms and suites with views of the Indian Ocean and the metropolis of Colombo.</p>
               </div>
               <div class="right-content">
-                <span>LKR 8500</span>
-                <a href="#" class="btn btn-primary btn-block">Book Now</a>
+                <span><span>LKR</span>8500</span>
+                <a href="#" class="btn btn-primary btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i> Book Now</a>
               </div>
             </div>
+
+            <div class="search-item">
+              <div class="image">
+                <img src="images/hotels/hotel-1.jpg" alt="">
+              </div>
+              <div class="center-content">
+                <h3><a href="#">Colombo City Hotel</a></h3>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 11, Upatissa Road Colombo- 04</p>
+                <div class="rating-container"><div class="rating-lg" data-value="3.5"></div> <span>(50 Reviews)</span></div>
+                <p>Hilton Colombo Residences offers 177 stylish rooms and suites with views of the Indian Ocean and the metropolis of Colombo.</p>
+              </div>
+              <div class="right-content">
+                <span><span>LKR</span>8500</span>
+                <a href="#" class="btn btn-primary btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i> Book Now</a>
+              </div>
+            </div>
+
+            <div class="search-item">
+              <div class="image">
+                <img src="images/hotels/hotel-1.jpg" alt="">
+              </div>
+              <div class="center-content">
+                <h3><a href="#">Colombo City Hotel</a></h3>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 11, Upatissa Road Colombo- 04</p>
+                <div class="rating-container"><div class="rating-lg" data-value="3.5"></div> <span>(50 Reviews)</span></div>
+                <p>Hilton Colombo Residences offers 177 stylish rooms and suites with views of the Indian Ocean and the metropolis of Colombo.</p>
+              </div>
+              <div class="right-content">
+                <span><span>LKR</span>8500</span>
+                <a href="#" class="btn btn-primary btn-block"><i class="fa fa-cart-plus" aria-hidden="true"></i> Book Now</a>
+              </div>
+            </div>
+
+            <nav aria-label="Page navigation" class="pagination-container">
+              <ul class="pagination">
+                <li>
+                  <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li>
+                  <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </section>

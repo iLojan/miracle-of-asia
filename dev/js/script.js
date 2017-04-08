@@ -9,6 +9,8 @@ jQuery.noConflict();
 	*/
 	$(function() {
 
+		var starColor = '#279257';
+
 		$('.parallax-window').parallax();
 
 		$('.slick').slick({
@@ -49,7 +51,7 @@ jQuery.noConflict();
 					$(this).rateYo({
 						rating: val,
 						starWidth: '12px',
-						ratedFill: '#518c3c',
+						ratedFill: starColor,
 						normalFill: "#dddddd",
 						readOnly: true
 					});
@@ -62,7 +64,7 @@ jQuery.noConflict();
 					$(this).rateYo({
 						rating: val,
 						starWidth: '24px',
-						ratedFill: '#518c3c',
+						ratedFill: starColor,
 						normalFill: "#dddddd",
 						readOnly: true
 					});

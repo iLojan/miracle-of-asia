@@ -52,6 +52,6 @@
 .pagination>li>span:focus, 
 .pagination>li>span:hover {
     color: #ffffff;
-    background-color: #279a55;
-    border-color: #279a55;
+    background-color: $primary-bg-color;
+    border-color: $primary-bg-color;
 }

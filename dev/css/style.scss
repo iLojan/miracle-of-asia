@@ -471,7 +471,7 @@ a.thumb-link:hover{
 			font-family: $font-primary;
 			margin: 0;
 			padding: 15px 10px 12px 10px;
-			background-color: #279a55;
+			background-color: $primary-bg-color;
 			color: #fff;
 		}
 
@@ -555,4 +555,8 @@ a.thumb-link:hover{
 	    margin-bottom: 10px;
 	}
 
+}
+
+.item-container{
+	margin-top: 30px;
 }

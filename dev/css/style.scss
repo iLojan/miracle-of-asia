@@ -23,6 +23,17 @@ a:focus{
 	padding: 0;
 }
 
+.row.margin-5{
+	margin-left: -5px;
+	margin-right: -5px;
+
+	.col-xs-4,
+	.col-sm-2{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
 .main-image{
 	min-height: $main-image-height;
 	background: transparent;
@@ -559,4 +570,40 @@ a.thumb-link:hover{
 
 .item-container{
 	margin-top: 30px;
+}
+
+#imageGallery{
+
+	img{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+}
+
+.form-container-right {
+    margin-top: -30px;
+    background-color: $primary-bg-color2;
+    padding: 20px 15px;
+
+    .form-control {
+	    background-color: #3e3e3e;
+	    border: 0;
+	    color: #fff;
+	}
+
+	label{
+		color: #ffffff;
+		font-weight: normal;
+	}
+
+	h3{
+		color: #fff;
+		margin: 0;
+		margin-bottom: 15px;
+
+		small{
+			color: $primary-bg-color;
+		}
+	}
 }

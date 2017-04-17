@@ -80,8 +80,20 @@ jQuery.noConflict();
 				$('.filter-cont-wrap').toggleClass('hidden-xs');
 			});
 
-		});
+			$('#imageGallery').on('click', function(e){
+				event = e || window.event;
+			    var target = event.target || event.srcElement,
+			        link = target.src ? target.parentNode : target,
+			        options = {
+			        	index: link, 
+			        	event: event,
+			        	continuous: false,
+			        	toggleControlsOnSlideClick: false
+			        },
+			        links = this.getElementsByTagName('a');
+			    blueimp.Gallery(links, options);
+			});
 
-		
+		});		
 
 }(jQuery));

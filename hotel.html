@@ -76,19 +76,24 @@
       <div class="container item-container">
         <div class="row">
           <div class="col-xs-12 col-sm-9">
-            <ul class="nav nav-tabs">
-              <li role="presentation" class="active"><a href="#">Overview</a></li>
-              <li role="presentation"><a href="#">Reviews</a></li>
-              <li role="presentation"><a href="#">The Host</a></li>
-              <li role="presentation"><a href="#">Location</a></li>
+            <ul id="stickyNav" class="nav nav-tabs">
+              <li role="presentation"><a href="#about">Overview</a></li>
+              <li role="presentation"><a href="#gallery">Image Gallery</a></li>
+              <li role="presentation"><a href="#location">Location</a></li>
+              <li role="presentation"><a href="">Location</a></li>
             </ul>
 
-            <h3>About Hilton</h3>
+            <p class="address">
+              Signature by Amaya, Kandalama, Dambulla, Sri Lanka.
+            </p>
+            <div class="rating-container"><div class="rating-lg" data-value="3.5"></div> <span>(50 Reviews)</span></div>
+
+            <h3 id="about">About Hilton</h3>
             <p>Linked by a walkway to Colombo's World Trade Center, this modern hotel is a 9-minute walk from Fort railway station and a 12-minute walk from the beach.</p>
             <p>Bright, warm rooms offer Wi-Fi (fee), flat-screen TVs, minibars, and tea and coffeemaking facilities. Some have ocean views. Suites and club rooms gain access to a lounge offering free breakfast and snacks; they also feature separate living rooms. Room service is available.</p>
             <p>Dining options include a colonial-style pub, a karaoke bar and an Italian restaurant. There's also a gym, a beauty salon, a shopping mall, and an outdoor pool with a kids' pool and a bar. Parking is included.</p>
 
-            <h3>Image Gallery</h3>
+            <h3 id="gallery">Image Gallery</h3>
             <div id="imageGallery" class="row margin-5">
               <a href="images/hotels/hotel-1.jpg" class="col-xs-4 col-sm-3" title="Hotel">
                   <img src="images/hotels/hotel-1.jpg" alt="Hotel">
@@ -115,9 +120,14 @@
                   <img src="images/hotels/hotel-3.jpg" alt="Hotel">
               </a>
             </div>
+
+            <h3 id="location">Location</h3>
+            <a href="#">
+              <img src="images/staticmap.png">
+            </a>
           </div>
           <div class="col-xs-12 col-sm-3">
-            <div class="form-container-right">
+            <div id="stickyForm" class="form-container-right">
               <h3><small>LKR</small> 8,305per night</h3>
               <form>
                 <div class="form-group">

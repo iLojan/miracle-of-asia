@@ -570,6 +570,39 @@ a.thumb-link:hover{
 
 .item-container{
 	margin-top: 30px;
+
+	.address{
+		font-size: 20px;
+	    margin-top: 30px;
+	    margin-bottom: 10px;
+	}
+
+	.jq-ry-container{
+		padding-left: 0;
+	}
+
+	.map{
+		color: $primary-bg-color;
+		text-decoration: none;
+
+		&:hover{
+			color: $primary-bg-color2;
+		}
+	}
+
+	h3{
+		margin-top: 30px;
+    	margin-bottom: 18px;
+	}
+
+	#stickyNav {
+	    background-color: #ffffff;
+	    z-index: 999 !important;
+	}
+
+	.nav-tabs>li>a{
+		border-radius: 0;
+	}
 }
 
 #imageGallery{
@@ -606,4 +639,8 @@ a.thumb-link:hover{
 			color: $primary-bg-color;
 		}
 	}
+}
+
+.is-sticky .form-container-right{
+	margin-top: 0;
 }

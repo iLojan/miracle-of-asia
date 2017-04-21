@@ -31,8 +31,8 @@ var paths = {
 gulp.task('scripts', ['jshint'], function() {
     return gulp.src(paths.scripts)
         .pipe(concat('app.min.js'))
-        .pipe(stripDebug())
-        .pipe(uglify())
+        //.pipe(stripDebug())
+        //.pipe(uglify())
         .pipe(gulp.dest('js'));
 });
 

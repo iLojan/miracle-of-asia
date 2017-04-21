@@ -130,12 +130,12 @@
 			var windowHeight = Math.round(this.$win.height() * this.config.scrollThreshold);
 
 			for(var section in this.sections) {
-				if((this.sections[section] - windowHeight) < windowPos) {
-					returnValue = section;
+				if(this.sections[section] > windowPos) {
+					return section;
 				}
 			}
 
-			return returnValue;
+			return null;
 		},
 
 		handleClick: function(e) {
@@ -200,6 +200,7 @@
 
 		scrollTo: function(target, callback) {
 			var offset = $(target).offset().top;
+			offset -= 42;
 
 			$('html, body').animate({
 				scrollTop: offset
